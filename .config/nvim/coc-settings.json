@@ -1,0 +1,27 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "typescript",
+        "typescriptreact",
+        "json",
+        "javascriptreact",
+        "typescript.tsx",
+        "scss",
+        "css"
+    ],
+    //"eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
+    "coc.preferences.diagnostic.virtualText": false,
+    "coc.preferences.colorSupport": false,
+    "typescript.suggest.autoImports": true,
+    "prettier.configPath": "~/.prettier",
+    //"prettier.formatterPriority": -1,
+    //"prettier.requireConfig": true,
+    //"prettier.onlyUseLocalVersion": true,
+    "emmet.includeLanguages": { "htmldjango": "html", "scss": "css" },
+    "diagnostic.checkCurrentLine": true,
+    "diagnostic.errorSign": "•",
+    "diagnostic.warningSign": "•",
+    "diagnostic.infoSign": "•",
+    "smartf.timeout": 2000,
+    "tsserver.npm": "/usr/local/bin/npm"
+}
