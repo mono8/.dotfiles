@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 " Plug 'othree/html5.vim'
+" Plug 'HerringtonDarkholme/yats.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
@@ -48,10 +49,11 @@ Plug 'colepeters/spacemacs-theme.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'relastle/bluewery.vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'w0ng/vim-hybrid'
 
 call plug#end()
 if exists('g:vscode')
-        " VSCode extension
+    set clipboard=unnamedplus
 else
         "     " ordinary neovim
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -61,21 +63,24 @@ set termguicolors
 " Theme
 syntax enable
 set background=dark
-" colorscheme solarized8
+" set background=light
+" colorscheme codedark
+colorscheme solarized8
 " let g:arcadia_Sunset = 1
 " colorscheme arcadia
 " colorscheme codedark
 " let g:material_theme_style = 'palenight'
 " colorscheme arcadia
-colorscheme solarized8
+" colorscheme gruvbox
 " colorscheme space-vim-dark
 " colorscheme vim-monokai-tasty 
 " hi LineNr ctermbg=NONE guibg=NONE
 " hi Comment guifg=#5C6370 ctermfg=59
 " hi SignColumn ctermbg=NONE guibg=NONE
 " hi Normal     ctermbg=NONE guibg=NONE
+" let g:gruvbox_contrast_light = 'soft' 
 let g:lightline = { 
-            \ 'colorscheme': 'solarized',
+            \ 'colorscheme': 'codedark',
             \ 'active': {
             \   'left': [ ['mode', 'paste'],
             \           ['gitbranch', 'readonly', 'filename', 'modified']]
@@ -91,6 +96,7 @@ let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
 let g:NERDTreeStatusline = ''
+let g:NERDTreeWinSize=50
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Toggle

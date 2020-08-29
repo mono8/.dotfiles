@@ -6,7 +6,7 @@ font:
   # The normal (roman) font face to use.
   normal:
     # family: Hack
-    family: Inconsolata
+    # family: Inconsolata
     family: Meslo LG M
     # family: Inconsolata LGC
     # family: Source Code Pro
@@ -40,7 +40,7 @@ font:
     # family: Fira Code for Powerline
     # Style can be specified to pick a specific face.
     # style: Italic
-  size: 9.0
+  size: 10.0
     
 schemes:
   monokai: &monokai
