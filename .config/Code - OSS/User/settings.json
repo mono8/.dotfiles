@@ -1,0 +1,166 @@
+{
+  "editor.fontFamily": "Meslo LG M, Source Code Pro, Dank Mono,  Fira code, Hasklig,  Consolas",
+  "editor.fontLigatures": true,
+  // vim
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  // easy motion settings
+  "vim.easymotion": true,
+  "vim.easymotionMarkerFontFamily": "Fira code",
+  "vim.easymotionMarkerForegroundColorTwoChar": "#292929",
+  "vim.easymotionMarkerForegroundColorOneChar": "#292929",
+  "vim.easymotionMarkerBackgroundColor": "#C586C0",
+  "vim.easymotionMarkerFontWeight": "500",
+  "vim.easymotionMarkerWidthPerChar": 10,
+  "vim.easymotionMarkerHeight": 16,
+  //
+  "vim.incsearch": true,
+  "vim.camelCaseMotion.enable": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.highlightedyank.enable": true,
+  "vim.hlsearch": true,
+  "vim.neovimPath": "/usr/bin/nvim",
+  "vim.enableNeovim": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "s"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "s"
+      ]
+    },
+    {
+      "before": [
+        "z",
+        "e",
+      ],
+      "commands": [
+        "workbench.action.toggleZenMode",
+      ]
+    },
+    {
+      "before": [
+        "<",
+      ],
+      "commands": [
+        "workbench.action.navigateBack",
+      ]
+    },
+    // vim-vinegar
+    {
+      "before": [
+        "-"
+      ],
+      "commands": [
+        {
+          "command": "breadcrumbs.toggleToOn",
+          "when": "!config.breadcrumbs.enabled",
+        },
+        {
+          "command": "breadcrumbs.focusAndSelect",
+          "when": "breadcrumbsPossible",
+        },
+      ],
+    },
+  ],
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false,
+    // "<C-w>": false,
+    "<C-f>": false,
+    "<C-k>": false,
+    "<C-b>": false
+  },
+  //
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "telemetry.enableTelemetry": false,
+  "emmet.triggerExpansionOnTab": true,
+  "terminal.integrated.fontFamily": "monospace",
+  "git.ignoreMissingGitWarning": true,
+  "files.autoSave": "onFocusChange",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.trailingComma": "all",
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "explorer.confirmDragAndDrop": false,
+  "editor.minimap.enabled": false,
+  "prettier.requireConfig": true,
+  "prettier.configPath": "/srv/biganto.com/visual/static/public/player/.prettierrc",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  // exclude files
+  "files.watcherExclude": {
+    "**/*.py": true,
+    "**/dist/**": true,
+    "**/docker/**": true,
+    "**/ephemera/**": true,
+    "**/js-dev/vendor/**": true,
+    "**/js/**": true,
+    "**/manage/**": true,
+    "**/outside/**": true,
+    "**/test/**": true,
+    "**/tests/**": true
+  },
+  "search.exclude": {
+    "**/dist/**": true,
+    "**/docker/**": true,
+    "**/ephemera/**": true,
+    "**/js-dev/vendor/**": true,
+    "**/js/**": true,
+    "**/manage/**": true,
+    "**/outside/**": true,
+    "**/test/**": true,
+    "**/tests/**": true
+  },
+  "keyboard.dispatch": "keyCode",
+  "editor.cursorBlinking": "solid",
+  "workbench.iconTheme": "quill-icons",
+  "material-icon-theme.folders.color": "#90a4ae",
+  "material-icon-theme.activeIconPack": "react_redux",
+  // "vim.statusBarColors.insert": "#646695",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
+  },
+  "vim.gdefault": true,
+  "breadcrumbs.symbolPath": "off",
+  "zenMode.hideStatusBar": false,
+  "vscode-neovim.neovimPath": "/usr/bin/nvim",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.lineNumbers": "off",
+  "editor.wordWrap": "on",
+  "vscode-neovim.neovimInitPath": "~/.config/nvim/init.vim",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.customMenuBarAltFocus": false,
+  "window.menuBarVisibility": "toggle",
+  "editor.fontSize": 16,
+}

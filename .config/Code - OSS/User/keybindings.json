@@ -1,0 +1,28 @@
+// Place your key bindings in this file to override the defaults
+[
+    // {
+    //   "key": "alt+k",
+    //   "command": "selectNextSuggestion",
+    //   "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    // },
+    // {
+    //   "key": "alt+j",
+    //   "command": "selectPrevSuggestion",
+    //   "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    // },
+    // {
+    //   "key": "shift+<",
+    //   "command": "workbench.action.quickInputBack",
+    //   "when": "inQuickOpen"
+    // }
+    // Make breadcrumbs work more like vim-vinegar
+    {
+        "key": "-",
+        "command": "breadcrumbs.focusPrevious",
+        "when": "breadcrumbsActive && breadcrumbsVisible"
+    },
+    {
+        "key": "ctrl+t ctrl+m",
+        "command": "workbench.action.toggleMenuBar"
+    }
+]
